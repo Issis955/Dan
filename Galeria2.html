@@ -1,0 +1,136 @@
+
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANZANDO CON FÉ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilo para la barra de navegación */
+        header {
+            background-color: #333;
+            color:  white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        /* Estilo para la galería */
+        .gallery-container {
+            overflow-x: scroll; /* Permite el desplazamiento horizontal */
+            white-space: nowrap; /* Hace que los elementos floten en una línea */
+            margin: 20px 0;
+        }
+        .gallery {
+            display: inline-block; /* Hace que los elementos floten en línea */
+            white-space: normal; /* Restaura el comportamiento normal del texto */
+            margin-right: 10px; /* Espacio entre imágenes */
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+     /* Cambiar el color de la palabra "Pago de servicio" a un tono morado claro */
+        nav ul li a[href*="Pago.html"] {
+            color: #9370DB; /* Código de color para un tono morado claro */
+        }
+
+ </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="Galeria2.html"><i class="fas fa-images"></i> Galería</a></li>
+                <li><a href="Quienes%20somos.html"><i class="fas fa-user bio-icon"></i> Quiénes somos</a></li>
+                <li><a href="Ubicacion2.html"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+                <li><a href="Que%20asemos.html"><i class="fas fa-user bio-icon"></i> Qué hacemos</a></li>
+                <li><a href="Video.html"><i class="fas fa-video"></i> Videos</a></li> <!-- Nuevo elemento para videos -->
+            </ul>
+        </nav>   
+  </header>
+
+  <div class="gallery-container">
+        <div class="gallery">
+    <div class="gallery">
+        <img src="C:\Users\issis\Pictures\12.jpg" alt="Descripción de la imagen 1">
+        <img src="C:\Users\issis\Pictures\1.jpg" alt="Descripción de la imagen 2">
+ <img src="C:\Users\issis\Pictures\2.jpg" alt="Descripción de la imagen 3">
+ <img src="C:\Users\issis\Pictures\3.jpg" alt="Descripción de la imagen 4">
+ <img src="C:\Users\issis\Pictures\4.jpg" alt="Descripción de la imagen 5">
+ <img src="C:\Users\issis\Pictures\5.jpg" alt="Descripción de la imagen 6">
+ <img src="C:\Users\issis\Pictures\6.jpg" alt="Descripción de la imagen 7">
+ <img src="C:\Users\issis\Pictures\7.jpg" alt="Descripción de la imagen 8">
+ <img src="C:\Users\issis\Pictures\8).jpg" alt="Descripción de la imagen 9">
+ <img src="C:\Users\issis\Pictures\9.jpg" alt="Descripción de la imagen 10">
+ <img src="C:\Users\issis\Pictures\10.jpg" alt="Descripción de la imagen 11">
+ <img src="C:\Users\issis\Pictures\13.jpg" alt="Descripción de la imagen 12">
+ <img src="C:\Users\issis\Pictures\14.jpg" alt="Descripción de la imagen 13">
+ <img src="C:\Users\issis\Pictures\15.jpg" alt="Descripción de la imagen 14">
+ <img src="C:\Users\issis\Pictures\16.jpg" alt="Descripción de la imagen 15">
+ <img src="C:\Users\issis\Pictures\17.jpg" alt="Descripción de la imagen 16">
+ <img src="C:\Users\issis\Pictures\18.jpg" alt="Descripción de la imagen 17">
+ <img src="C:\Users\issis\Pictures\19.jpg" alt="Descripción de la imagen 18">
+ <img src="C:\Users\issis\Pictures\20.jpg" alt="Descripción de la imagen 19">
+ <img src="C:\Users\issis\Pictures\21.jpg" alt="Descripción de la imagen 20">
+ <img src="C:\Users\issis\Pictures\22.jpg" alt="Descripción de la imagen 21">
+ <img src="C:\Users\issis\Pictures\23.jpg" alt="Descripción de la imagen 22">
+ <img src="C:\Users\issis\Pictures\24.jpg" alt="Descripción de la imagen 23">
+ <img src="C:\Users\issis\Pictures\25.jpg" alt="Descripción de la imagen 24">
+ <img src="C:\Users\issis\Pictures\26.jpg" alt="Descripción de la imagen 25">
+        <!-- Agrega más imágenes con la misma estructura -->       
+        </div>
+    </div>
+<div class="lightbox">
+        <img src="" alt="Imagen en lightbox">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = document.querySelector('.lightbox img');
+
+        images.forEach(image => {
+ image.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = image.src;
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    </script>
+</body>
+</Html>

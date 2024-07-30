@@ -1,0 +1,135 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANZANDO CON FÉ</title>
+    <!-- Incluir Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87ceeb; /* Azul cielo */
+        }
+        header {
+            background-color: #afeeee; /* Azul claro */
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out; /* Animación de aparición */
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .logo {
+            animation: slideAndFadeLogo 10s infinite alternate; /* Animación del logo */
+        }
+        @keyframes slideAndFadeLogo {
+            0%, 100% {
+                opacity: 0;
+                transform: translateX(-50px); /* Comienza fuera de la pantalla a la izquierda */
+            }
+            50% {
+                opacity: 1;
+                transform: translateX(0); /* Aparece en su posición original */
+            }
+        }
+        nav {
+            background-color: #87ceeb; /* Azul cielo */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center; /* Para centrar los enlaces horizontalmente */
+            list-style-type: none; /* Elimina los marcadores de lista */
+            padding: 0;
+        }
+        nav li {
+            margin: 0 10px; /* Espacio entre los elementos de la lista */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out; /* Animación del enlace de navegación */
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 20px;
+            text-align: center; /* Alinear texto al centro */
+        }
+        footer {
+            background-color: #afeeee; /* Azul claro */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInFooter 8s ease-in-out; /* Animación de aparición */
+        }
+        @keyframes fadeInFooter {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-icons {
+            display: flex;
+            justify-content: center; /* Para centrar los iconos de redes sociales horizontalmente */
+        }
+        footer .social-icons a {
+            margin: 0 5px;
+            transition: transform 5s ease-in-out; /* Animación del icono de redes sociales */
+        }
+        footer .social-icons a:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DANZANDO CON FÉ</h1>
+        <img src="C:\Users\issis\Downloads\issis.jpg" alt="DANZANDO CON FÉ" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="Galeria2.html"><i class="fas fa-images"></i> Galería</a></li>
+                <li><a href="Quienes%20somos.html"><i class="fas fa-user bio-icon"></i> Quiénes somos</a></li>
+                <li><a href="Ubicacion2.html"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+                <li><a href="Que%20asemos.html"><i class="fas fa-user bio-icon"></i> Qué hacemos</a></li>
+                <li><a href="Video.html"><i class="fas fa-video"></i> Videos</a></li> <!-- Nuevo elemento para videos -->
+            </ul>
+        </nav>
+    </header>  
+     
+    <section>
+        <h2>Bienvenido a nuestro sitio de Danzarinas para Cristo</h2>  
+        <p>Hay muchos lugares para descansar el cuerpo, pero hay un solo lugar para descansar el alma.<br>Ese lugar es: JESÚS</p>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 DANZARINAS</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
